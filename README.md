@@ -102,13 +102,3 @@ MIT
 ## Support
 
 For support, please [create an issue](your-repository-url/issues) in the repository.
-```
-
-This README.md provides a comprehensive overview of your project, including:
-- Features and capabilities
-- Installation instructions
-- Usage guidelines
-- Project structure
-- Technical details
-- Security considerations
-- Contributing guidelines
