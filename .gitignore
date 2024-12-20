@@ -1,0 +1,17 @@
+.env 
+node_modules
+*.DS_Store
+*.env
+package-lock.json
+package.json
+.vscode/
+.idea/
+*.log
+dist/
+build/
+coverage/
+.env.local
+.env.development
+.env.test
+.env.production
+.cursorignore

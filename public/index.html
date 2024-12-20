@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="OpenAI Realtime API WebRTC Demo - Real-time communication with AI" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Chris's OpenAI Realtime API WebRTC Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Add favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Add this before your script.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Add this for syntax highlighting (optional) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.8.0/styles/github.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/highlight.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="logo.png" alt="Application Logo" style="max-width: 125px;" />
+            <div class="connection-status">
+                <span id="statusIndicator" class="status-offline">●</span>
+                <button id="connectBtn" aria-label="Connect to service">Connect</button>
+            </div>
+        </header>
+        
+        <main>
+            <div id="conversation" class="conversation"></div>
+            
+            <div class="events-container">
+                <button id="toggleEvents" class="toggle-events" aria-expanded="false" aria-controls="eventsLog">
+                    Show Events Log
+                </button>
+                <textarea 
+                    id="eventsLog" 
+                    placeholder="Events will appear here..." 
+                    readonly 
+                    aria-label="Events log"
+                    class="collapsed"
+                ></textarea>
+            </div>
+            
+            <form class="input-section" id="messageForm">
+                <input 
+                    type="text" 
+                    id="userMessage" 
+                    placeholder="Type a message (e.g. instructions for the model)" 
+                    aria-label="Message input"
+                    autocomplete="off"
+                />
+                <button 
+                    type="submit" 
+                    id="sendBtn" 
+                    aria-label="Send message"
+                >Send Message</button>
+            </form>
+        </main>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
