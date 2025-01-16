@@ -24,8 +24,8 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
 ```bash
-git clone <your-repository-url>
-cd <repository-name>
+git clone [(https://github.com/cajcodes/ai-talks.git)]
+cd ai-talks
 ```
 
 2. Install dependencies:
